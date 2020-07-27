@@ -1,0 +1,45 @@
+.navbar{
+  margin-bottom: 0;
+}
+.navbar-inverse{
+  background-color: #191919;
+}
+.navbar-left>li{
+  margin: 5px 5px 5px 0;
+}
+.navbar-right>li {
+  margin: 5px 0 5px 5px;
+}
+
+
+.navbar-inverse .navbar-nav>.active>a {
+  color: $color-light;
+  background-color: #053159;
+  border-radius: 4px;
+}
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>li>a:focus,
+.navbar-inverse .navbar-nav>li>a:hover {
+  color: $color-light;
+  background-color: #165690;
+  border-radius: 4px;
+}
+
+.panel-warning{
+  background-color: $color-gray;
+  border-color: #dddddd;
+}
+
+.panel-warning>.panel-heading {
+  color: $color-light;
+  background-color: $color-accent;
+  border-color: $color-accent;
+}
+.panel-title{
+  font-size: 1.2rem;
+  letter-spacing: .1em;
+}
+
+.input-lg{
+  border-radius: 6px;
+}
