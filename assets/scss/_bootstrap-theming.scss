@@ -11,7 +11,6 @@
   margin: 5px 0 5px 5px;
 }
 
-
 .navbar-inverse .navbar-nav>.active>a {
   color: $color-light;
   background-color: #053159;
@@ -24,7 +23,9 @@
   background-color: #165690;
   border-radius: 4px;
 }
-
+.panel{
+  margin-bottom: 30px;
+}
 .panel-warning{
   background-color: $color-gray;
   border-color: #dddddd;
@@ -35,11 +36,38 @@
   background-color: $color-accent;
   border-color: $color-accent;
 }
-.panel-title{
+.panel-heading{
   font-size: 1.2rem;
   letter-spacing: .1em;
+}
+.nav-tabs{
+  border-bottom: none;
+}
+.nav>li>a{
+  padding: 14px 5px;
+  color: $color-light;
+
+  &:hover{
+    background-color: transparent;
+    border-color: transparent;
+  }
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover{
+  background-color: transparent;
+  border-color: transparent;
+  color: $color-gray;
 }
 
 .input-lg{
   border-radius: 6px;
+}
+.input-lg{
+  font-size: .875em;
+}
+
+.list-group{
+  margin-bottom: 0;
 }
