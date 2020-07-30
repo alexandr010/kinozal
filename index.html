@@ -78,11 +78,321 @@
   <div class="container">
     <div class="row">
       <main class="main col-lg-9 col-lg-push-3 col-md-8 col-md-push-4">
-        <!-- TODO: write main block-->
+        <section class="site-search-main hidden-md hidden-lg">
+          <div class="site-search panel panel-warning">
+            <div class="panel-heading">Поиск
+            </div>
+            <div class="panel-body">
+              <form action="search">
+                <div class="input-group">
+                  <input type="text" class="form-control input-lg" placeholder="Поиск по сайту"
+                    aria-describedby="basic-addon1">
+                  <span class="input-group-btn">
+                    <button type="submit" class="btn btn-default btn-lg">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="user-login-main hidden-md hidden-lg">
+          <div class="user-login panel panel-warning">
+            <div class="panel-heading">Пользователь</div>
+            <div class="panel-body">
+              <ul class="user-login-tab nav nav-tabs" role="tablist">
+                <li role="presentation"><a href="#user-login-main" aria-controls="user-login-main" role="tab"
+                    data-toggle="tab">
+                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+                </li>
+                <li role="presentation"><a href="#user-rigistr-main" aria-controls="user-rigistr-main" role="tab"
+                    data-toggle="tab">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="user-login-main">
+                  <form action="login">
+                    <div class="form-group">
+                      <input type="text" class="form-control input-lg" placeholder="Логин">
+                    </div>
+                    <div class="form-group">
+                      <input type="password" class="form-control input-lg" placeholder="Пароль">
+                    </div>
+                    <button type="submit" class="btn btn-default btn-lg btn-block">Вход</button>
+                  </form>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="user-rigistr-main">
+                  <form action="login">
+                    <div class="form-group">
+                      <input type="text" class="form-control input-lg" placeholder="Логин">
+                    </div>
+                    <div class="form-group">
+                      <input type="password" class="form-control input-lg" placeholder="Пароль">
+                    </div>
+                    <div class="form-group">
+                      <input type="email" class="form-control input-lg" placeholder="Email">
+                    </div>
+                    <button type="submit" class="btn btn-default btn-lg btn-block">Регистрация</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="new-films">
+          <h1 class="new-films-title">Новые фильмы</h1>
+          <div class="new-films-row row">
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item-thubmail thumbnail">
+                <a href="#">
+                  <img src="assets/img/films/1266931.jpg" alt="Стражи галактики" class="new-films-item-img">
+                  <div class="new-films-item-caption caption">
+                    <h3 class="new-films-item-title">Стражи галактики</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item-thubmail thumbnail">
+                <a href="#">
+                  <img src="assets/img/films/1289488.jpg" alt="Занесло" class="new-films-item-img">
+                  <div class="new-films-item-caption caption">
+                    <h3 class="new-films-item-title">Занесло</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item-thubmail thumbnail">
+                <a href="#">
+                  <img src="assets/img/films/1341151.jpg" alt="Из машины" class="new-films-item-img">
+                  <div class="new-films-item-caption caption">
+                    <h3 class="new-films-item-title">Из машины</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item-thubmail thumbnail">
+                <a href="#">
+                  <img src="assets/img/films/1381061.jpg" alt="Выхода нет" class="new-films-item-img">
+                  <div class="new-films-item-caption caption">
+                    <h3 class="new-films-item-title">Выхода нет</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item-thubmail thumbnail">
+                <a href="#">
+                  <img src="assets/img/films/1393263.jpg" alt="Человек-муравей" class="new-films-item-img">
+                  <div class="new-films-item-caption caption">
+                    <h3 class="new-films-item-title">Человек-муравей</h3>
+                </a>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item-thubmail thumbnail">
+                <a href="#">
+                  <img src="assets/img/films/1263242.jpg" alt="Люси" class="new-films-item-img">
+                  <div class="new-films-item-caption caption">
+                    <h3 class="new-films-item-title">Люси</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item-thubmail thumbnail">
+                <a href="#">
+                  <img src="assets/img/films/1401663.jpg" alt="Марсианин" class="new-films-item-img">
+                  <div class="new-films-item-caption caption">
+                    <h3 class="new-films-item-title">Марсианин</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item-thubmail thumbnail">
+                <a href="#">
+                  <img src="assets/img/films/1415999.jpg" alt="Дочь Бога" class="new-films-item-img">
+                  <div class="new-films-item-caption caption">
+                    <h3 class="new-films-item-title">Дочь Бога</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item-thubmail thumbnail">
+                <a href="#">
+                  <img src="assets/img/films/1423264.jpg" alt="Месть от кутюр" class="new-films-item-img">
+                  <div class="new-films-item-caption caption">
+                    <h3 class="new-films-item-title">Месть от кутюр</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item-thubmail thumbnail">
+                <a href="#">
+                  <img src="assets/img/films/1441076.jpg" alt="5тяь" class="new-films-item-img">
+                  <div class="new-films-item-caption caption">
+                    <h3 class="new-films-item-title">5ять</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item-thubmail thumbnail">
+                <a href="#">
+                  <img src="assets/img/films/1453229.jpg" alt="Люди Икс" class="new-films-item-img">
+                  <div class="new-films-item-caption caption">
+                    <h3 class="new-films-item-title">Люди Икс</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item-thubmail thumbnail">
+                <a href="#">
+                  <img src="assets/img/films/1455536.jpg" alt="иллюзия обмана 2" class="new-films-item-img">
+                  <div class="new-films-item-caption caption">
+                    <h3 class="new-films-item-title">иллюзия обмана 2</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="top-week">
+          <h2 class="top-week-title">ТОП за неделю</h2>
+          <div class="top-week-row row">
+            <article class="top-week-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="top-week-item-thubmail thumbnail">
+                <a href="#">
+                  <img src="assets/img/films/1401663.jpg" alt="Марсианин" class="top-week-item-img">
+                  <div class="top-week-item-caption caption">
+                    <h3 class="top-week-item-title">Марсианин</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="top-week-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="top-week-item-thubmail thumbnail">
+                <a href="#">
+                  <img src="assets/img/films/1453229.jpg" alt="Люди Икс" class="top-week-item-img">
+                  <div class="top-week-item-caption caption">
+                    <h3 class="top-week-item-title">Люди Икс</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="top-week-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="top-week-item-thubmail thumbnail">
+                <a href="#">
+                  <img src="assets/img/films/1263242.jpg" alt="Люси" class="top-week-item-img">
+                  <div class="top-week-item-caption caption">
+                    <h3 class="top-week-item-title">Люси</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="top-week-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="top-week-item-thubmail thumbnail">
+                <a href="#">
+                  <img src="assets/img/films/1266931.jpg" alt="Стражи галактики" class="top-week-item-img">
+                  <div class="top-week-item-caption caption">
+                    <h3 class="top-week-item-title">Стражи галактики</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="top-week-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="top-week-item-thubmail thumbnail">
+                <a href="#">
+                  <img src="assets/img/films/1289488.jpg" alt="Занесло" class="top-week-item-img">
+                  <div class="top-week-item-caption caption">
+                    <h3 class="top-week-item-title">Занесло</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="top-week-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="top-week-item-thubmail thumbnail">
+                <a href="#">
+                  <img src="assets/img/films/1341151.jpg" alt="Из машины" class="top-week-item-img">
+                  <div class="top-week-item-caption caption">
+                    <h3 class="top-week-item-title">Из машины</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="top-week-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="top-week-item-thubmail thumbnail">
+                <a href="#">
+                  <img src="assets/img/films/1381061.jpg" alt="Выхода нет" class="top-week-item-img">
+                  <div class="top-week-item-caption caption">
+                    <h3 class="top-week-item-title">Выхода нет</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="top-week-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="top-week-item-thubmail thumbnail">
+                <a href="#">
+                  <img src="assets/img/films/1393263.jpg" alt="Человек-муравей" class="top-week-item-img">
+                  <div class="top-week-item-caption caption">
+                    <h3 class="top-week-item-title">Человек-муравей</h3>
+                </a>
+              </div>
+            </article>
+            <article class="top-week-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="top-week-item-thubmail thumbnail">
+                <a href="#">
+                  <img src="assets/img/films/1415999.jpg" alt="Дочь Бога" class="top-week-item-img">
+                  <div class="top-week-item-caption caption">
+                    <h3 class="top-week-item-title">Дочь Бога</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="top-week-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="top-week-item-thubmail thumbnail">
+                <a href="#">
+                  <img src="assets/img/films/1423264.jpg" alt="Месть от кутюр" class="top-week-item-img">
+                  <div class="top-week-item-caption caption">
+                    <h3 class="top-week-item-title">Месть от кутюр</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="top-week-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="top-week-item-thubmail thumbnail">
+                <a href="#">
+                  <img src="assets/img/films/1441076.jpg" alt="5тяь" class="top-week-item-img">
+                  <div class="top-week-item-caption caption">
+                    <h3 class="top-week-item-title">5ять</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
 
+            <article class="top-week-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="top-week-item-thubmail thumbnail">
+                <a href="#">
+                  <img src="assets/img/films/1455536.jpg" alt="иллюзия обмана 2" class="top-week-item-img">
+                  <div class="top-week-item-caption caption">
+                    <h3 class="top-week-item-title">иллюзия обмана 2</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+          </div>
+        </section>
       </main>
       <aside class="left-asside col-lg-3 col-lg-pull-9 col-md-4 col-md-pull-8">
-        <div class="vertical-carusel panel panel-default">
+        <div class="vertical-carusel panel panel-default hidden-sm hidden-xs">
           <div id="vertical-slider" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#vertical-slider" data-slide-to="0" class="active"></li>
@@ -109,9 +419,8 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
-
         </div>
-        <div class="search panel panel-warning">
+        <div class="site-search panel panel-warning hidden-xs hidden-sm">
           <div class="panel-heading">Поиск
           </div>
           <div class="panel-body">
@@ -128,13 +437,15 @@
             </form>
           </div>
         </div>
-        <div class="user-login panel panel-warning">
+        <div class="user-login panel panel-warning hidden-xs hidden-sm">
           <div class="panel-heading">Пользователь</div>
           <div class="panel-body">
             <ul class="user-login-tab nav nav-tabs" role="tablist">
-              <li role="presentation"><a href="#user-login" aria-controls="user-login" role="tab" data-toggle="tab">
+              <li class="user-login-tab-item" role="presentation"><a class="user-login-tab-link" href="#user-login"
+                  aria-controls="user-login" role="tab" data-toggle="tab">
                   <span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></li>
-              <li role="presentation"><a href="#user-rigistr" aria-controls="user-rigistr" role="tab" data-toggle="tab">
+              <li class="user-login-tab-item" role="presentation"><a class="user-login-tab-link" href="#user-rigistr"
+                  aria-controls="user-rigistr" role="tab" data-toggle="tab">
                   <span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a></li>
             </ul>
             <div class="tab-content">
@@ -165,11 +476,8 @@
                 </form>
               </div>
             </div>
-
-
           </div>
         </div>
-
         <div class="news panel panel-warning">
           <div class="panel-heading">Новости сайта
           </div>

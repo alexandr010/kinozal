@@ -1,5 +1,21 @@
+.header-logo-title {
+  text-shadow: 0 0 5px black, 0 0 10px black, 0 0 20px black;
+}
+
+.header, .main {
+  margin-bottom: 79.99999px;
+}
+
 .navbar {
   margin-bottom: 0;
+}
+
+.navbar-header {
+  text-align: center;
+}
+
+.navbar-toggle {
+  float: none;
 }
 
 .navbar-inverse {
@@ -37,15 +53,15 @@
   border-color: #dddddd;
 }
 
+.panel-heading {
+  font-size: 1.2rem;
+  letter-spacing: .1em;
+}
+
 .panel-warning > .panel-heading {
   color: #ffffff;
   background-color: #df8a13;
   border-color: #df8a13;
-}
-
-.panel-heading {
-  font-size: 1.2rem;
-  letter-spacing: .1em;
 }
 
 .nav-tabs {
@@ -53,7 +69,6 @@
 }
 
 .nav > li > a {
-  padding: 14px 5px;
   color: #ffffff;
 }
 
@@ -72,9 +87,6 @@
 
 .input-lg {
   border-radius: 6px;
-}
-
-.input-lg {
   font-size: .875em;
 }
 
@@ -92,13 +104,10 @@ body {
   overflow-y: scroll;
 }
 
-a {
+a,
+a:hover {
   text-decoration: none;
   color: #165690;
-}
-
-.header {
-  margin-bottom: 80px;
 }
 
 .header-logo {
@@ -112,8 +121,6 @@ a {
 
 .header-logo-title {
   display: block;
-  letter-spacing: 0.33em;
-  font-size: 3.5rem;
   color: #df8a13;
   font-family: "PT Serif", serif;
   line-height: 1.42857143;
@@ -124,6 +131,157 @@ a {
   letter-spacing: 0.2em;
   color: #ffffff;
   font-size: 1.15rem;
+}
+
+.main .site-search-main {
+  margin-bottom: 45px;
+}
+
+.main .user-login-main {
+  margin-bottom: 60px;
+}
+
+.new-films {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.new-films-title {
+  position: relative;
+  font-family: "PT Serif", serif;
+  margin: -6.5px 0 45px;
+}
+
+.new-films-title:after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  margin: 0.85em 0 0 15px;
+  border-bottom: 3px solid rgba(240, 173, 79, 0.7);
+}
+
+.new-films-row {
+  margin-right: -7.5px;
+  margin-left: -7.5px;
+}
+
+.new-films-item {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+  margin-bottom: 15px;
+}
+
+.new-films-item-thubmail {
+  margin-bottom: 0;
+  -webkit-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+}
+
+.new-films-item-thubmail:hover {
+  background-color: #df8a13;
+}
+
+.new-films-item-thubmail:hover .new-films-item-title {
+  color: #ffffff;
+}
+
+.new-films-item-img {
+  width: 100%;
+}
+
+.new-films-item-caption {
+  text-align: center;
+}
+
+.new-films-item-title {
+  display: block;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  margin: 0;
+  font-weight: bold;
+  font-size: 1rem;
+  -webkit-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
+}
+
+.top-week {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.top-week-title {
+  position: relative;
+  font-family: "PT Serif", serif;
+  margin: 60px 0 45px 45px;
+}
+
+.top-week-title:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  width: 30px;
+  margin: 0.25em 0 0 -1em;
+  border-bottom: 3px solid rgba(240, 173, 79, 0.7);
+}
+
+.top-week-title:after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  margin: 0.85em 0 0 15px;
+  border-bottom: 3px solid rgba(240, 173, 79, 0.7);
+}
+
+.top-week-row {
+  margin-right: -7.5px;
+  margin-left: -7.5px;
+}
+
+.top-week-item {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+  margin-bottom: 15px;
+}
+
+.top-week-item-thubmail {
+  margin-bottom: 0;
+  -webkit-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+}
+
+.top-week-item-thubmail:hover {
+  background-color: #df8a13;
+}
+
+.top-week-item-thubmail:hover .new-films-item-title {
+  color: #ffffff;
+}
+
+.top-week-item-img {
+  width: 100%;
+}
+
+.top-week-item-caption {
+  text-align: center;
+}
+
+.top-week-item-title {
+  display: block;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  margin: 0;
+  font-weight: bold;
+  font-size: 1rem;
+  -webkit-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
 }
 
 .vertical-carusel {
@@ -143,6 +301,10 @@ a {
   position: absolute;
   top: 0;
   right: 10px;
+}
+
+.user-login-tab-item > a {
+  padding: 14px 5px !important;
 }
 
 .news-item {
@@ -245,4 +407,32 @@ a {
 
 .top-films-item-badge {
   margin-right: -35px;
+}
+
+@media (min-width: 576px) {
+  .header-logo-title {
+    margin-right: -15px;
+    font-size: 3.5rem;
+    letter-spacing: 0.33em;
+  }
+  .new-films-title {
+    font-size: 3rem;
+  }
+  .top-week-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 575.8px) {
+  .header-logo-title {
+    margin-right: -7.5px;
+    letter-spacing: 0.2em;
+    font-size: 2.5rem;
+  }
+  .new-films-title {
+    font-size: 2rem;
+  }
+  .top-week-title {
+    font-size: 1.75rem;
+  }
 }

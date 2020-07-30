@@ -8,7 +8,8 @@ body{
   overflow-y: scroll;
 }
 
-a{
+a,
+a:hover{
   text-decoration: none;
   color: $color-primary;
 }
