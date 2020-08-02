@@ -94,6 +94,16 @@
   margin-bottom: 0;
 }
 
+.embed-responsive {
+  border: 1px solid #dddddd;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+}
+
+.well {
+  text-align: center;
+}
+
 html {
   font-size: 16px;
 }
@@ -116,6 +126,76 @@ ul {
 
 li {
   list-style: none;
+}
+
+.film-info {
+  position: relative;
+  overflow: hidden;
+}
+
+.film-info-title {
+  position: relative;
+  font-family: "PT Serif", serif;
+  margin: -10px 0 45px 0;
+}
+
+.film-info-title::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  margin: .85em 0 0 15px;
+  border-bottom: 3px solid rgba(240, 173, 79, 0.7);
+}
+
+.film-info-content {
+  font-size: 1.2em;
+  white-space: nowrap;
+}
+
+.film-info-content:not(:last-of-type) {
+  margin-right: 15px;
+}
+
+.film-info-badge {
+  font-size: 0.8em;
+}
+
+.film-about,
+.film-comment,
+.film-feedback {
+  position: relative;
+  overflow: hidden;
+}
+
+.film-feedback-button {
+  float: right;
+}
+
+.film-feedback-title,
+.film-comment-title,
+.film-about-title {
+  margin: 60px 0 45px 45px;
+}
+
+.film-feedback-title:before,
+.film-comment-title:before,
+.film-about-title:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  width: 30px;
+  margin: 0.25em 0 0 .2em;
+  border-bottom: 3px solid rgba(240, 173, 79, 0.7);
+}
+
+.film-feedback-title::after,
+.film-comment-title::after,
+.film-about-title::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  margin: .85em 0 0 15px;
+  border-bottom: 3px solid rgba(240, 173, 79, 0.7);
 }
 
 .header-logo {
@@ -141,11 +221,11 @@ li {
   font-size: 1.15rem;
 }
 
-.main .site-search-main {
+.site-search-main {
   margin-bottom: 45px;
 }
 
-.main .user-login-main {
+.user-login-main {
   margin-bottom: 60px;
 }
 
@@ -228,7 +308,7 @@ li {
   margin: 60px 0 45px 45px;
 }
 
-.top-week-title:before {
+.top-week-title::before {
   position: absolute;
   content: '';
   left: 0;
@@ -237,11 +317,11 @@ li {
   border-bottom: 3px solid rgba(240, 173, 79, 0.7);
 }
 
-.top-week-title:after {
+.top-week-title::after {
   position: absolute;
   content: '';
   width: 100%;
-  margin: 0.85em 0 0 15px;
+  margin: .85em 0 0 15px;
   border-bottom: 3px solid rgba(240, 173, 79, 0.7);
 }
 
@@ -303,20 +383,20 @@ li {
   margin: 60px 0 45px 45px;
 }
 
-.film-news-title:before {
+.film-news-title::before {
   position: absolute;
   content: '';
   left: 0;
   width: 30px;
-  margin: 0.25em 0 0 -1.1em;
+  margin: 0.25em 0 0 -1em;
   border-bottom: 3px solid rgba(240, 173, 79, 0.7);
 }
 
-.film-news-title:after {
+.film-news-title::after {
   position: absolute;
   content: '';
   width: 100%;
-  margin: 0.85em 0 0 15px;
+  margin: .85em 0 0 15px;
   border-bottom: 3px solid rgba(240, 173, 79, 0.7);
 }
 
@@ -329,7 +409,7 @@ li {
   color: #df8a13;
 }
 
-.film-news-item .film-news-item-title a {
+.film-news-item-title a {
   -webkit-transition: color .25s;
   -o-transition: color .25s;
   transition: color .25s;
@@ -498,6 +578,14 @@ li {
 }
 
 @media (min-width: 576px) {
+  .film-info-title {
+    font-size: 3rem;
+  }
+  .film-feedback-title,
+  .film-comment-title,
+  .film-about-title {
+    font-size: 2.5rem;
+  }
   .header-logo-title {
     margin-right: -15px;
     font-size: 3.5rem;
@@ -515,6 +603,14 @@ li {
 }
 
 @media (max-width: 575.8px) {
+  .film-info-title {
+    font-size: 2rem;
+  }
+  .film-feedback-title,
+  .film-comment-title,
+  .film-about-title {
+    font-size: 1.75rem;
+  }
   .header-logo-title {
     margin-right: -7.5px;
     letter-spacing: 0.2em;
