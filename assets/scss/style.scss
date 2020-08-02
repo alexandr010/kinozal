@@ -1,390 +1,505 @@
-@import "variables";
-@import "skin";
+@import 'variables';
+@import 'skin';
 
-@import "mixins-media";
-@import "mixins";
-@import "extends";
+@import 'mixins-media';
+@import 'mixins';
+@import 'extends';
 
-@import "bootstrap-theming";
+@import 'bootstrap-theming';
 
-@import "common";
-@import "page";
+@import 'common';
+@import 'page';
 
-.header {
-  @extend %margin-bottom-lg;
+.header
+{
+    @extend %margin-bottom-lg;
 
-  &-logo {
-    padding: 100px 0;
-    text-align: center;
-    background-color: $color-dark;
-    background: url(../img/header-bg.jpg);
-    background-position: center center;
-    background-size: cover;
+    &-logo
+    {
+        padding: 100px 0;
 
-    &-title {
-      display: block;
-      color: $color-accent;
-      font-family: $font-header;
-      line-height: 1.42857143;
-      @extend %text-shadow;
+        text-align: center;
 
-      @include xs-min {
-        margin-right: -15px;
-        font-size: 3.5rem;
-        letter-spacing: 0.33em;
-      }
+        background: url(../img/header-bg.jpg);
+        background-color: $color-dark;
+        background-position: center center;
+        background-size: cover;
 
-      @include xs {
-        margin-right: -7.5px;
-        letter-spacing: 0.2em;
-        font-size: 2.5rem;
-      }
-    }
+        &-title
+        {
+            font-family: $font-header;
+            line-height: 1.42857143;
 
-    &-text {
-      display: block;
-      letter-spacing: 0.2em;
-      color: #ffffff;
-      font-size: 1.15rem;
-    }
-  }
-}
+            display: block;
 
-.main {
-  @extend %margin-bottom-lg;
-}
+            color: $color-accent;
 
-.site-search-main {
-  margin-bottom: $gap * 3;
-}
+            @extend %text-shadow;
+            @include xs-min
+            {
+                font-size: 3.5rem;
 
-.user-login-main {
-  margin-bottom: $gap * 4;
-}
+                margin-right: -15px;
 
-.new-films {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
+                letter-spacing: .33em;
+            }
+            @include xs
+            {
+                font-size: 2.5rem;
 
-  &-title {
-    position: relative;
-    font-family: $font-header;
-    margin: -6.5px 0 45px;
-    // width: 100%;
+                margin-right: -7.5px;
 
-    @include xs-min {
-      font-size: 3rem;
-    }
-
-    @include xs {
-      font-size: 2rem;
-    }
-
-    &:after {
-      position: absolute;
-      content: '';
-      width: 100%;
-      margin: 0.85em 0 0 15px;
-      border-bottom: 3px solid rgba(240, 173, 79, 0.7);
-
-    }
-  }
-
-  &-row {
-    margin-right: -$gap / 2;
-    margin-left: -$gap / 2;
-  }
-
-  &-item {
-    padding-left: $gap / 2;
-    padding-right: $gap / 2;
-    margin-bottom: $gap;
-
-    &-thubmail {
-      margin-bottom: 0;
-      transition: background-color 0.25s;
-
-      &:hover {
-        background-color: $color-accent;
-
-        .new-films-item-title {
-          color: $color-light;
+                letter-spacing: .2em;
+            }
         }
-      }
-    }
 
-    &-img {
-      width: 100%;
-    }
+        &-text
+        {
+            font-size: 1.15rem;
 
-    &-caption {
-      text-align: center;
-    }
+            display: block;
 
-    &-title {
-      display: block;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      margin: 0;
-      font-weight: bold;
-      font-size: 1rem;
-      transition: color 0.25s;
-    }
+            letter-spacing: .2em;
 
-  }
-}
-
-.top-week {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-
-  &-title {
-    position: relative;
-    font-family: $font-header;
-    margin: 60px 0 45px 45px;
-
-    @include xs-min {
-      font-size: 2.5rem;
-    }
-
-    @include xs {
-      font-size: 1.75rem;
-    }
-    @include line-before;
-    @include line-after;
-  }
-
-  &-row {
-    margin-right: -$gap / 2;
-    margin-left: -$gap / 2;
-  }
-
-  &-item {
-    padding-left: $gap / 2;
-    padding-right: $gap / 2;
-    margin-bottom: $gap;
-
-    &-thubmail {
-      margin-bottom: 0;
-      transition: background-color 0.25s;
-
-      &:hover {
-        background-color: $color-accent;
-
-        .new-films-item-title {
-          color: $color-light;
+            color: #fff;
         }
-      }
     }
-
-    &-img {
-      width: 100%;
-    }
-
-    &-caption {
-      text-align: center;
-    }
-
-    &-title {
-      display: block;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      margin: 0;
-      font-weight: bold;
-      font-size: 1rem;
-      transition: color 0.25s;
-    }
-  }
 }
 
-.film-news {
-  position: relative;
-  overflow: hidden;
+.main
+{
+    @extend %margin-bottom-lg;
+}
 
-  &-title {
+.site-search-main
+{
+    margin-bottom: $gap * 3;
+}
+
+.user-login-main
+{
+    margin-bottom: $gap * 4;
+}
+
+.new-films
+{
     position: relative;
-    font-family: $font-header;
-    margin: 60px 0 45px 45px;
 
-    @include xs-min {
-      font-size: 2.5rem;
-    }
+    overflow: hidden;
 
-    @include xs {
-      font-size: 1.75rem;
-    }
-
-    @include line-before;
-    @include line-after;
-  }
-
-  &-item {
-    &:hover {
-
-      .film-news-item-thumbmail,
-      .film-news-item-link {
-        background-color: $color-accent;
-      }
-
-      .film-news-item-title a {
-        color: $color-accent;
-      }
-
-    }
-
-    &-title a {
-      transition: color .25s;
-    }
-
-    &-thumbmail {
-      transition: background-color .25s;
-    }
-
-    &-text {
-      text-align: justify;
-    }
-
-    &-link {
-      float: right;
-      transition: background-color .25s;
-      margin-bottom: 30px;
-    }
-  }
-}
-
-.vertical-carusel {
-  overflow: hidden;
-  border-radius: 4px;
-
-  & img {
     width: 100%;
-  }
-}
 
-.user-login {
-  position: relative;
+    &-title
+    {
+        font-family: $font-header;
 
-  &-tab {
-    position: absolute;
-    top: 0;
-    right: 10px;
+        position: relative;
 
-    &-item>a {
-      padding: 14px 5px !important;
+        margin: -6.5px 0 45px;
+        // width: 100%;
+
+        @include xs-min
+        {
+            font-size: 3rem;
+        }
+        @include xs
+        {
+            font-size: 2rem;
+        }
+
+        &:after
+        {
+            position: absolute;
+
+            width: 100%;
+            margin: .85em 0 0 15px;
+
+            content: '';
+
+            border-bottom: 3px solid rgba(240, 173, 79, .7);
+        }
     }
-  }
-}
 
-.news-item {
-  position: relative;
-  clear: both;
-
-  &-img {
-    width: 75px;
-    float: left;
-    margin: 0 10px 10px 0;
-    transition: background-color 0.25s;
-  }
-
-  &-title {
-    margin-bottom: 10px;
-    @include block-shortener(1rem, 1.5, 50px, 2);
-  }
-
-  &-title a {
-    transition: background-color 0.25s;
-
-    &:hover {
-      text-decoration: none;
-      color: $color-accent;
+    &-row
+    {
+        margin-right: -$gap / 2;
+        margin-left: -$gap / 2;
     }
-  }
 
-  &-date {
-    text-align: right;
-    font-size: 0.8rem;
-    color: #909090;
-  }
+    &-item
+    {
+        margin-bottom: $gap;
+        padding-right: $gap / 2;
+        padding-left: $gap / 2;
 
-  &:not(:last-child) {
-    margin-bottom: 15px;
-    min-height: 85px;
-  }
+        &-thubmail
+        {
+            margin-bottom: 0;
 
-  &:not(:last-child)::after {
-    position: absolute;
-    right: 0;
-    bottom: -5px;
-    width: calc(100% - 85px);
-    height: 1px;
-    content: "";
-    background-color: #dddddd;
-  }
-}
+            transition: background-color .25s;
 
-.news-item:hover .news-item-img {
-  background-color: $color-accent;
-}
+            &:hover
+            {
+                background-color: $color-accent;
 
-.news-item:hover .news-item-title a {
-  text-decoration: none;
-  color: $color-accent;
-}
+                .new-films-item-title
+                {
+                    color: $color-light;
+                }
+            }
+        }
 
-.top-films-body {
-  padding-left: 0;
-  padding-right: 0;
-}
+        &-img
+        {
+            width: 100%;
+        }
 
-.top-films-item {
-  color: #165690 !important;
-  background-color: $color-gray;
-  overflow: hidden;
-  padding-right: 50px;
-  margin-left: -1px;
-  margin-right: -1px;
+        &-caption
+        {
+            text-align: center;
+        }
 
-  &:hover,
-  &focus {
-    border-color: $color-accent;
-    background-color: $color-accent !important;
-    color: $color-light !important;
+        &-title
+        {
+            font-size: 1rem;
+            font-weight: bold;
 
-    .badge {
-      background-color: $color-dark;
+            display: block;
+            overflow: hidden;
+
+            margin: 0;
+
+            transition: color .25s;
+            text-overflow: ellipsis;
+        }
     }
-  }
 }
 
-.top-films-item:first-child {
-  border-top: none;
+.top-week
+{
+    position: relative;
+
+    overflow: hidden;
+
+    width: 100%;
+
+    &-title
+    {
+        font-family: $font-header;
+
+        position: relative;
+
+        margin: 60px 0 45px 45px;
+
+        @include xs-min
+        {
+            font-size: 2.5rem;
+        }
+        @include xs
+        {
+            font-size: 1.75rem;
+        }
+        @include line-before;
+        @include line-after;
+    }
+
+    &-row
+    {
+        margin-right: -$gap / 2;
+        margin-left: -$gap / 2;
+    }
+
+    &-item
+    {
+        margin-bottom: $gap;
+        padding-right: $gap / 2;
+        padding-left: $gap / 2;
+
+        &-thubmail
+        {
+            margin-bottom: 0;
+
+            transition: background-color .25s;
+
+            &:hover
+            {
+                background-color: $color-accent;
+
+                .new-films-item-title
+                {
+                    color: $color-light;
+                }
+            }
+        }
+
+        &-img
+        {
+            width: 100%;
+        }
+
+        &-caption
+        {
+            text-align: center;
+        }
+
+        &-title
+        {
+            font-size: 1rem;
+            font-weight: bold;
+
+            display: block;
+            overflow: hidden;
+
+            margin: 0;
+
+            transition: color .25s;
+            text-overflow: ellipsis;
+        }
+    }
 }
 
-.top-films-item:last-child {
-  border-bottom: none;
+.film-news
+{
+    position: relative;
+
+    overflow: hidden;
+
+    &-title
+    {
+        font-family: $font-header;
+
+        position: relative;
+
+        margin: 60px 0 45px 45px;
+
+        @include xs-min
+        {
+            font-size: 2.5rem;
+        }
+        @include xs
+        {
+            font-size: 1.75rem;
+        }
+        @include line-before;
+        @include line-after;
+    }
+
+    &-item
+    {
+        &:hover
+        {
+            .film-news-item-thumbmail,
+            .film-news-item-link
+            {
+                background-color: $color-accent;
+            }
+
+            .film-news-item-title a
+            {
+                color: $color-accent;
+            }
+        }
+
+        &-title a
+        {
+            transition: color .25s;
+        }
+
+        &-thumbmail
+        {
+            transition: background-color .25s;
+        }
+
+        &-text
+        {
+            text-align: justify;
+        }
+
+        &-link
+        {
+            float: right;
+
+            margin-bottom: 30px;
+
+            transition: background-color .25s;
+        }
+    }
 }
 
-.top-films-item-badge {
-  margin-right: -35px;
+.vertical-carusel
+{
+    overflow: hidden;
+
+    border-radius: 4px;
+
+    & img
+    {
+        width: 100%;
+    }
 }
 
-.footer {
-  padding-top: 50px;
-  background-color: $color-dark;
+.user-login
+{
+    position: relative;
 
-  &-column h4 {
-    color: $color-light;
-  }
+    &-tab
+    {
+        position: absolute;
+        top: 0;
+        right: 10px;
 
-  & a {
-    color: #777777;
-  }
+        &-item > a
+        {
+            padding: 14px 5px !important;
+        }
+    }
+}
 
-  &-bottom {
-    margin: 20px 0;
-    color: $color-light;
-    text-align: center;
-  }
+.news-item
+{
+    position: relative;
+
+    clear: both;
+
+    &-img
+    {
+        float: left;
+
+        width: 75px;
+        margin: 0 10px 10px 0;
+
+        transition: background-color .25s;
+    }
+
+    &-title
+    {
+        margin-bottom: 10px;
+
+        @include block-shortener(1rem, 1.5, 50px, 2);
+    }
+
+    &-title a
+    {
+        transition: background-color .25s;
+
+        &:hover
+        {
+            text-decoration: none;
+
+            color: $color-accent;
+        }
+    }
+
+    &-date
+    {
+        font-size: .8rem;
+
+        text-align: right;
+
+        color: #909090;
+    }
+
+    &:not(:last-child)
+    {
+        min-height: 85px;
+        margin-bottom: 15px;
+    }
+
+    &:not(:last-child)::after
+    {
+        position: absolute;
+        right: 0;
+        bottom: -5px;
+
+        width: calc(100% - 85px);
+        height: 1px;
+
+        content: '';
+
+        background-color: #ddd;
+    }
+}
+
+.news-item:hover .news-item-img
+{
+    background-color: $color-accent;
+}
+
+.news-item:hover .news-item-title a
+{
+    text-decoration: none;
+
+    color: $color-accent;
+}
+
+.top-films-body
+{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.top-films-item
+{
+    overflow: hidden;
+
+    margin-right: -1px;
+    margin-left: -1px;
+    padding-right: 50px;
+
+    color: #165690 !important;
+    background-color: $color-gray;
+
+    &:hover,
+    &focus
+    {
+        color: $color-light !important;
+        border-color: $color-accent;
+        background-color: $color-accent !important;
+
+        .badge
+        {
+            background-color: $color-dark;
+        }
+    }
+}
+
+.top-films-item:first-child
+{
+    border-top: none;
+}
+
+.top-films-item:last-child
+{
+    border-bottom: none;
+}
+
+.top-films-item-badge
+{
+    margin-right: -35px;
+}
+
+.footer
+{
+    padding-top: 50px;
+
+    background-color: $color-dark;
+
+    &-column h4
+    {
+        color: $color-light;
+    }
+
+    & a
+    {
+        color: #777;
+    }
+
+    &-bottom
+    {
+        margin: 20px 0;
+
+        text-align: center;
+
+        color: $color-light;
+    }
 }

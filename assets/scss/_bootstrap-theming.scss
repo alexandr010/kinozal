@@ -1,98 +1,119 @@
-.navbar {
-  margin-bottom: 0;
+.navbar
+{
+    margin-bottom: 0;
 
-  &-header {
-    text-align: center;
-  }
+    &-header
+    {
+        text-align: center;
+    }
 
-  &-toggle {
-    float: none;
-  }
+    &-toggle
+    {
+        float: none;
+    }
 }
 
-.navbar-inverse {
-  background-color: #191919;
+.navbar-inverse
+{
+    background-color: #191919;
 }
 
-.navbar-left>li {
-  margin: 5px 5px 5px 0;
+.navbar-left > li
+{
+    margin: 5px 5px 5px 0;
 }
 
-.navbar-right>li {
-  margin: 5px 0 5px 5px;
+.navbar-right > li
+{
+    margin: 5px 0 5px 5px;
 }
 
-.navbar-inverse .navbar-nav>.active>a {
-  color: $color-light;
-  background-color: #053159;
-  border-radius: 4px;
+.navbar-inverse .navbar-nav > .active > a
+{
+    color: $color-light;
+    border-radius: 4px;
+    background-color: #053159;
 }
 
-.navbar-inverse .navbar-nav>.active>a:hover,
-.navbar-inverse .navbar-nav>li>a:focus,
-.navbar-inverse .navbar-nav>li>a:hover {
-  color: $color-light;
-  background-color: #165690;
-  border-radius: 4px;
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > li > a:hover
+{
+    color: $color-light;
+    border-radius: 4px;
+    background-color: #165690;
 }
 
-.panel {
-  margin-bottom: 30px;
+.panel
+{
+    margin-bottom: 30px;
 
-  &-warning {
-    background-color: $color-gray;
-    border-color: #dddddd;
-  }
+    &-warning
+    {
+        border-color: #ddd;
+        background-color: $color-gray;
+    }
 
-  &-heading {
-    font-size: 1.2rem;
-    letter-spacing: .1em;
-  }
+    &-heading
+    {
+        font-size: 1.2rem;
 
+        letter-spacing: .1em;
+    }
 }
 
-.panel-warning>.panel-heading {
-  color: $color-light;
-  background-color: $color-accent;
-  border-color: $color-accent;
+.panel-warning > .panel-heading
+{
+    color: $color-light;
+    border-color: $color-accent;
+    background-color: $color-accent;
 }
 
-.nav-tabs {
-  border-bottom: none;
+.nav-tabs
+{
+    border-bottom: none;
 }
 
-.nav>li>a {
-  color: $color-light;
+.nav > li > a
+{
+    color: $color-light;
 
-  &:hover {
-    background-color: transparent;
+    &:hover
+    {
+        border-color: transparent;
+        background-color: transparent;
+    }
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover
+{
+    color: $color-gray;
     border-color: transparent;
-  }
+    background-color: transparent;
 }
 
-.nav-tabs>li.active>a,
-.nav-tabs>li.active>a:focus,
-.nav-tabs>li.active>a:hover {
-  background-color: transparent;
-  border-color: transparent;
-  color: $color-gray;
+.input-lg
+{
+    font-size: .875em;
+
+    border-radius: 6px;
 }
 
-.input-lg {
-  border-radius: 6px;
-  font-size: .875em;
+.list-group
+{
+    margin-bottom: 0;
 }
 
-.list-group {
-  margin-bottom: 0;
+.embed-responsive
+{
+    border: 1px solid #ddd;
+    border-bottom: none;
+    border-radius: 4px 4px 0 0;
 }
 
-.embed-responsive {
-  border: 1px solid #dddddd;
-  border-bottom: none;
-  border-radius: 4px 4px 0 0;
-}
-
-.well{
-  text-align: center;
+.well
+{
+    text-align: center;
 }

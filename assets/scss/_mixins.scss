@@ -1,66 +1,81 @@
-@mixin text-shortener {
-  display: block;
-  overflow: hidden;
+@mixin text-shortener
+{
+    display: block;
+    overflow: hidden;
 
-  white-space: nowrap;
-  text-overflow: ellipsis;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
-@mixin block-shortener($fz: 1rem, $lh: 1.5, $h: 70px, $l: 3) {
-  display: -webkit-box;
-  overflow: hidden;
+@mixin block-shortener($fz: 1rem, $lh: 1.5, $h: 70px, $l: 3)
+{
+    font-size: $fz;
+    line-height: $fz * $lh;
 
-  height: $h;
+    display: -webkit-box;
+    overflow: hidden;
 
-  font-size: $fz;
-  line-height: $fz * $lh;
+    height: $h;
 
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: $l;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $l;
 }
 
-@mixin bg-color($a: 0, $rgb: 0) {
-  background: rgba($rgb, $rgb, $rgb, $a);
+@mixin bg-color($a: 0, $rgb: 0)
+{
+    background: rgba($rgb, $rgb, $rgb, $a);
 }
 
-@mixin block-header {
-  margin: 0;
-  padding-bottom: 10px;
+@mixin block-header
+{
+    margin: 0;
+    padding-bottom: 10px;
 
-  border-bottom: 1px solid $color-dark;
+    border-bottom: 1px solid $color-dark;
 }
 
-@mixin visually-hidden {
-  position: absolute;
-
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-
-  border: 0;
-}
-
-@mixin line-before{
-  &::before{
+@mixin visually-hidden
+{
     position: absolute;
-    content: '';
-    left: 0;
-    width: 30px;
-    margin: 0.25em 0 0 -1em;
-    border-bottom: 3px solid rgba(240, 173, 79, 0.7);
-  }
+
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    border: 0;
 }
 
-@mixin line-after{
-  &::after{
-    position: absolute;
-    content: '';
-    width: 100%;
-    margin: .85em 0 0 15px;
-    border-bottom: 3px solid rgba(240, 173, 79, 0.7);
-  }
+@mixin line-before
+{
+    &::before
+    {
+        position: absolute;
+        left: 0;
+
+        width: 30px;
+        margin: .25em 0 0 -1em;
+
+        content: '';
+
+        border-bottom: 3px solid rgba(240, 173, 79, .7);
+    }
+}
+
+@mixin line-after
+{
+    &::after
+    {
+        position: absolute;
+
+        width: 100%;
+        margin: .85em 0 0 15px;
+
+        content: '';
+
+        border-bottom: 3px solid rgba(240, 173, 79, .7);
+    }
 }
